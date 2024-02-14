@@ -319,7 +319,7 @@ main {
   background-color: #fff;
   box-shadow: inset 1px 1px 30px rgba(0, 0, 0, .2);
   z-index: 1000;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1rem;
   display: none;
 }
