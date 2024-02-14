@@ -1,4 +1,4 @@
-let moves = JSON.parse(localStorage.getItem("moves"));
+let moves = ["2.33", "5.67", "1.20", "13.55"];
 
 
 const loadingBar = document.querySelector('.loading-bar');
@@ -13,31 +13,31 @@ const move = document.querySelector('.value');
 const loginContainer = document.querySelector('.login-container');
 
 // working on adding moves
-const openMove = document.querySelector('.header');
-const moveContainer = document.querySelector('.add-moves-contaner');
-const closeMove = document.querySelector('.close-move-btn');
-const addMoveBtn = document.querySelector('.add-move-btn');
-const moveInputs = document.querySelectorAll('.add-moves-input');
+// const openMove = document.querySelector('.header');
+// const moveContainer = document.querySelector('.add-moves-contaner');
+// const closeMove = document.querySelector('.close-move-btn');
+// const addMoveBtn = document.querySelector('.add-move-btn');
+// const moveInputs = document.querySelectorAll('.add-moves-input');
 
-// open move container
-openMove.addEventListener('click', () => {
-  moveContainer.classList.add('show-move-container');
-})
-// closing move container
-closeMove.addEventListener('click', () => {
-  moveContainer.classList.remove('show-move-container');
-})
+// // open move container
+// openMove.addEventListener('click', () => {
+//   moveContainer.classList.add('show-move-container');
+// })
+// // closing move container
+// closeMove.addEventListener('click', () => {
+//   moveContainer.classList.remove('show-move-container');
+// })
 
-addMoveBtn.addEventListener('click', () => {
-  const movesValues = moveInputs;
-  moves = [];
-  movesValues.forEach((movesValue) => {
-    moves.push(movesValue.value);
-    movesValue.value = '';
-  })
-  moveContainer.classList.remove('show-move-container');
-  localStorage.setItem("moves", JSON.stringify(moves));
-})
+// addMoveBtn.addEventListener('click', () => {
+//   const movesValues = moveInputs;
+//   moves = [];
+//   movesValues.forEach((movesValue) => {
+//     moves.push(movesValue.value);
+//     movesValue.value = '';
+//   })
+//   moveContainer.classList.remove('show-move-container');
+//   localStorage.setItem("moves", JSON.stringify(moves));
+// })
 
 // working on the login
 const input = document.getElementById('id');
