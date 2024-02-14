@@ -43,6 +43,9 @@ const loginContainer = document.querySelector('.login-container');
 const input = document.getElementById('id');
 const form = document.querySelector('.login');
 // const sBtn = document.querySelector('.submit-btn');
+// preloader
+
+const preloder1 = document.querySelector('.preloader');
 
 const alert = document.querySelector('.alert');
 
@@ -59,6 +62,10 @@ form.addEventListener('submit', (e) => {
       // loginContainer.style.display = "none";
       sLoader.style.display = "none";
       sLoader.style.transition = `all ${1}s ease`;
+      preloder1.style.display = "flex";
+      setTimeout(() => {
+        preloder1.style.display = "none";
+      }, 8000)
     }, 5000)
   } else {
     setTimeout(() => {
@@ -83,19 +90,6 @@ function displayAlert(text, action) {
 
 // working on the login ends here
 
-// preloader
-
-// const preloder1 = document.querySelector('.preloader');
-
-// window.addEventListener('DOMContentLoaded', () => {
-//   preloder1.style.display = "none";
-// })
-
-// window.addEventListener('load', () => {
-//   setTimeout(() => {
-//     preloder1.style.display = "none";
-//   }, 5000)
-// })
 
 loginContainer.style.display = "flex";
 
