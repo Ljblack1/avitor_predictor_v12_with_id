@@ -88,7 +88,7 @@ function displayAlert(text, action) {
 const preloder1 = document.querySelector('.preloader');
 
 window.addEventListener('DOMContentLoaded', () => {
-  preloder1.style.display = "flex";
+  preloder1.style.display = "none";
 })
 
 window.addEventListener('load', () => {
