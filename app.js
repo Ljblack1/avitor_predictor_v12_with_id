@@ -2,6 +2,9 @@
 
 const preloder1 = document.querySelector('.preloader');
 const preloder2 = document.querySelector('.preloader2');
+const options = document.querySelectorAll('.option-btn');
+
+const loader = document.querySelector('.small-load');
 
 window.addEventListener('DOMContentLoaded', () => {
   preloder1.style.display = "flex";
@@ -15,4 +18,22 @@ window.addEventListener('load', () => {
       preloder2.style.display = "none";
     }, 5000)
   }, 5000)
+})
+
+options.forEach((option) => {
+  option.addEventListener('click', (e) => {
+    const id = e.currentTarget.dataset.id;
+
+    loader.style.display = "flex";
+
+    setTimeout(() => {
+      if (id && id === "aviator") {
+        loader.style.display = "none";
+        location.href = "sportybet/aviator.html";
+      } else {
+        alert("no id");
+      }
+    }, 4000)
+    
+  })
 })

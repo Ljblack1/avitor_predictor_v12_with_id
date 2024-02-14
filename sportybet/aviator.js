@@ -115,7 +115,7 @@ btn.addEventListener("click", () => {
     // btn.textContent = "Next Game";
     sLoader.style.display = "none";
     bgWithSignal.style.transform = `scaleY(${1.2}) translateX(${0})`;
-  }, 3000)
+  }, 15000)
 
 
   value++;
