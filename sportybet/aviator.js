@@ -85,17 +85,17 @@ function displayAlert(text, action) {
 
 // preloader
 
-const preloder1 = document.querySelector('.preloader');
+// const preloder1 = document.querySelector('.preloader');
 
-window.addEventListener('DOMContentLoaded', () => {
-  preloder1.style.display = "none";
-})
+// window.addEventListener('DOMContentLoaded', () => {
+//   preloder1.style.display = "none";
+// })
 
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    preloder1.style.display = "none";
-  }, 5000)
-})
+// window.addEventListener('load', () => {
+//   setTimeout(() => {
+//     preloder1.style.display = "none";
+//   }, 5000)
+// })
 
 loginContainer.style.display = "flex";
 
